@@ -1,4 +1,4 @@
-# Digital Library (Library_Project.py)
+# Digital Library
 
 Python console app that simulates a small library workflow: add/search books, borrow/return,
 and persist state to JSON.
@@ -58,12 +58,16 @@ python -m pytest
 
 ## Project Structure
 ```text
-Library_Project.py/
+digital-library/
 +-- digital_library.py
 +-- library_data.json
 +-- tests/
 +-- docs/
 ```
+
+## Development Timeline
+- Core implementation: OOP model, borrow/return rules, JSON persistence, and tests.
+- Recent polish: screenshot refresh and README restructuring for clearer technical review.
 
 ## Notes
 - `library_data.json` can be edited to preload a custom catalog.
