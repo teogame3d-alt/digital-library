@@ -1,127 +1,70 @@
 # Digital Library (Library_Project.py)
 
-A Python console application for managing a personal library.  
-Users can add books, search, borrow/return, and save/load library data in JSON format.
+Python console app that simulates a small library workflow: add/search books, borrow/return,
+and persist state to JSON.
 
----
+![Educational Flow](docs/images/educational_flow.svg)
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Example Output](#example-output)
-6. [Project Structure](#project-structure)
-7. [Important Notes](#important-notes)
-8. [License](#license)
-9. [Future Improvements](#future-improvements)
-10. [Portfolio Value](#portfolio-value)
+## Why This Project Matters
+This project demonstrates foundational backend skills in a compact scope:
+- object-oriented domain modeling
+- deterministic state transitions
+- persistence and reload behavior
+- automated tests for core logic
 
----
+## Core Features
+- Add, list, and search books
+- Borrow and return flows with availability checks
+- Save and load library state from `library_data.json`
+- Generate a simple operational report
 
-## Overview
+## Architecture
+- `Book`, `Reader`, `Library` classes define the domain model.
+- A menu-driven CLI orchestrates user actions.
+- JSON persistence keeps data durable between sessions.
 
-Digital Library is a **Python console application** demonstrating object-oriented programming, file I/O, and interactive menu design. It allows users to manage a personal book collection efficiently.
+## Tech Stack
+Python, JSON, pytest.
 
----
-
-## Features
-
-- **Add new books** with title, author, publication year, and category
-- **Display all books** or sort them by publication year
-- **Search books** by author, category, or year
-- **Borrow & return books** with status tracking
-- **Library report** showing total books, available books, borrowed books, and total successful borrows
-- **Save & load data** in JSON format (`library_data.json`) for persistent storage
-- Editable JSON file for external modifications or pre-populated libraries
-
----
-
-## Installation
-
-1. Make sure you have **Python 3.9+** installed.
-2. Clone this repository:
+## Quick Start
 ```bash
-git clone https://github.com/teogame3d-alt/Library_Project.py.git
-cd Library_Project.py
-Usage
-Run the application using Python:
-
-bash
-Copiază codul
 python digital_library.py
-Follow the interactive menu:
+```
 
-Display all books
+## Demo Flow (For Recruiters)
+```text
+1) Add a new book
+2) Borrow that book
+3) Save data to JSON
+4) Restart app and load JSON
+5) Confirm state is preserved
+```
 
-Display books sorted by year
-
-Add a book
-
-Search by author
-
-Search by publication year
-
-Borrow a book
-
-Return a book
-
-Library report
-
-Save library to JSON
-
-Load library from JSON
-
-Exit
-
-Example Output
-yaml
-Copiază codul
+## Example Output (trimmed)
+```text
 Books in Central Library:
- - The Little Prince – Antoine de Saint-Exupéry – available
- - Ion – Liviu Rebreanu – borrowed
- - Baltagul – Mihail Sadoveanu – available
+ - The Little Prince - Antoine de Saint-Exupery - available
 
 ==== LIBRARY REPORT ====
 Total books: 3
 Available books: 2
 Borrowed books: 1
-Total successful borrows: 1
-Project Structure
-bash
-Copiază codul
+```
+
+## Tests
+```bash
+python -m pytest
+```
+
+## Project Structure
+```text
 Library_Project.py/
-├── digital_library.py      # Main Python script
-├── library_data.json       # JSON file storing book data
-├── README.md               # Project documentation
-├── LICENSE                 # MIT License
-├── .gitignore              # Git ignore rules
-Important Notes
-Add books and save them first before loading library data from JSON.
++-- digital_library.py
++-- library_data.json
++-- tests/
++-- docs/
+```
 
-If you try to load without saved books, the library will start empty.
-
-library_data.json is editable, allowing you to pre-populate the library or modify books manually.
-
-License
-This project is licensed under the MIT License – see LICENSE for details.
-
-Future Improvements
-GUI version for easier interaction
-
-Categorization and filtering options
-
-Multiple user profiles
-
-Integration with online book databases
-
-Portfolio Value
-This project demonstrates:
-
-Python OOP skills – classes, methods, and object management
-
-File I/O & JSON handling – saving and loading persistent data
-
-Interactive console applications – menus, input validation, and user experience
-
-Project organization & documentation – ready for professional portfolio
+## Notes
+- `library_data.json` can be edited to preload a custom catalog.
+- The app starts with a small demo dataset for quick validation.
