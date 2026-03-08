@@ -3,7 +3,7 @@
 Python console app that simulates a small library workflow: add/search books, borrow/return,
 and persist state to JSON.
 
-![Educational Flow](docs/images/educational_flow.svg)
+![Library Project Screenshot](docs/images/Library_project.png)
 
 ## Why This Project Matters
 This project demonstrates foundational backend skills in a compact scope:
