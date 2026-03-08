@@ -31,7 +31,7 @@ Python, JSON, pytest.
 python digital_library.py
 ```
 
-## Demo Flow (For Recruiters)
+## Demo Flow
 ```text
 1) Add a new book
 2) Borrow that book
@@ -68,3 +68,4 @@ Library_Project.py/
 ## Notes
 - `library_data.json` can be edited to preload a custom catalog.
 - The app starts with a small demo dataset for quick validation.
+
