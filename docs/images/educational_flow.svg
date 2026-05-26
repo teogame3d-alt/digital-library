@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <rect width="900" height="320" fill="#f7f7f7"/>
+  <text x="40" y="40" font-family="Arial" font-size="20" fill="#222">Educational Use Flow</text>
+
+  <rect x="40" y="70" width="220" height="70" rx="8" fill="#ffffff" stroke="#333"/>
+  <text x="60" y="100" font-family="Arial" font-size="14" fill="#222">Run the app</text>
+  <text x="60" y="120" font-family="Arial" font-size="12" fill="#555">Learn menus + input</text>
+
+  <rect x="330" y="70" width="220" height="70" rx="8" fill="#ffffff" stroke="#333"/>
+  <text x="350" y="100" font-family="Arial" font-size="14" fill="#222">Practice OOP</text>
+  <text x="350" y="120" font-family="Arial" font-size="12" fill="#555">Book, Reader, Library</text>
+
+  <rect x="620" y="70" width="220" height="70" rx="8" fill="#ffffff" stroke="#333"/>
+  <text x="640" y="100" font-family="Arial" font-size="14" fill="#222">Persist data</text>
+  <text x="640" y="120" font-family="Arial" font-size="12" fill="#555">Save and load JSON</text>
+
+  <line x1="260" y1="105" x2="330" y2="105" stroke="#333" stroke-width="2"/>
+  <polygon points="330,105 322,100 322,110" fill="#333"/>
+
+  <line x1="550" y1="105" x2="620" y2="105" stroke="#333" stroke-width="2"/>
+  <polygon points="620,105 612,100 612,110" fill="#333"/>
+
+  <rect x="40" y="190" width="800" height="90" rx="8" fill="#ffffff" stroke="#333"/>
+  <text x="60" y="225" font-family="Arial" font-size="14" fill="#222">Goal for students</text>
+  <text x="60" y="245" font-family="Arial" font-size="12" fill="#555">Understand state, validation, and simple persistence with clear console feedback.</text>
+</svg>

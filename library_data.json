@@ -1,0 +1,23 @@
+[
+    {
+        "title": "The Little Prince",
+        "author": "Antoine de Saint-Exupéry",
+        "year": 1943,
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "title": "Ion",
+        "author": "Liviu Rebreanu",
+        "year": 1920,
+        "category": "Classic",
+        "available": true
+    },
+    {
+        "title": "Baltagul",
+        "author": "Mihail Sadoveanu",
+        "year": 1930,
+        "category": "Classic",
+        "available": true
+    }
+]
