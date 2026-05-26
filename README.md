@@ -83,6 +83,6 @@ digital-library/
 - The app starts with a small demo dataset for quick validation.
 
 
-## Mentor Notes
-See docs/MENTOR_NOTES.md for technical rationale, build-vs-polish context, and learning notes.
+## Engineering Notes
+See docs/ENGINEERING_NOTES.md for technical rationale, build-vs-polish context, and learning notes.
 

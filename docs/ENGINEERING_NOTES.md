@@ -1,4 +1,4 @@
-# Mentor Notes
+# Engineering Notes
 
 ## Why this project exists
 I built this project to demonstrate core Python OOP and state management in a small but complete product flow.
