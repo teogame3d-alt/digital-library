@@ -32,6 +32,16 @@ This project demonstrates foundational backend skills in a compact scope:
 - A menu-driven CLI orchestrates user actions.
 - JSON persistence keeps data durable between sessions.
 
+## Proof of Work
+- Tests verify borrow/return state changes and persistence behavior.
+- The CLI can be run without external services, accounts, or API keys.
+- `snapshot()` gives a structured view that could later feed a UI or API layer.
+
+## Difficult Parts / Tradeoffs
+- The project stays intentionally small so OOP fundamentals are easy to inspect.
+- JSON is used instead of a database because the goal is domain modeling and persistence basics.
+- The CLI is simple by design; the value is in predictable state transitions and tests.
+
 ## Tech Stack
 Python, JSON, pytest.
 
